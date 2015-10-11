@@ -10,7 +10,7 @@ var csvImporter = require('../lib/managers/import');
 db.connect().then(function() {
     logger.info('Importing csv');
     return csvImporter.import(process.argv[2]);
-}).then(function(data) {
+}).then(function() {
     logger.info('Imported csv');
     process.exit(0);
 }).fail(function(err) {
