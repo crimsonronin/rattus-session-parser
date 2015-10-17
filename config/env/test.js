@@ -3,10 +3,10 @@
  */
 module.exports = {
     app: {
-        name: 'rattus-session-parser'
+        name: 'rattus'
     },
-    port: 3000,
-    db: 'mongodb://localhost/rattus-session-parser-test',
+    port: 8080,
+    db: 'mongodb://localhost/rattus-test',
     logger: {
         prefix: 'dev -',
         transports: [

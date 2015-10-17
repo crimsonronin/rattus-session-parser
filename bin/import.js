@@ -12,8 +12,8 @@ db.connect().then(function() {
     return csvImporter.import(process.argv[2]);
 }).then(function() {
     logger.info('Imported csv');
-    process.exit(0);
+    //process.exit(0);
 }).fail(function(err) {
     logger.error('Failed', err);
     process.exit(1);
-});
+})

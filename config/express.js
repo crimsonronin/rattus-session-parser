@@ -6,6 +6,7 @@ var glob = require('glob');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var compress = require('compression');
+var cors = require('cors');
 var methodOverride = require('method-override');
 
 module.exports = function(app, config) {
@@ -20,6 +21,7 @@ module.exports = function(app, config) {
         extended: true
     }));
     app.use(cookieParser());
+    app.use(cors());
     app.use(compress());
     app.use(methodOverride());
 
