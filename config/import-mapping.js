@@ -45,6 +45,7 @@ module.exports = {
         'Trial Analysis - Centre Blank Touches - [a-zA-Z\\s]+ \\(([0-9]+)\\)': 'blank-touches.center',
         'Trial Analysis - Reward Collection Latency \\(([0-9]+)\\)': 'reward-collection-latency',
         'Trial Analysis - Correct Image Response Latency \\(([0-9]+)\\)': 'correct-image-response-latency',
-        'Trial Analysis - Incorrect Image Latency \\(([0-9]+)\\)': 'incorrect-image-latency'
+        'Trial Analysis - Incorrect Image Latency \\(([0-9]+)\\)': 'incorrect-image-latency',
+        'Trial Analysis - Delay \\(([0-9]+)\\)': 'delay'
     }
 };

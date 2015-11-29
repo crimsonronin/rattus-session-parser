@@ -4,24 +4,24 @@
  */
 var db = require('../lib/utils/db');
 var logger = require('../lib/utils/logger');
-var csvImporter = require('../lib/managers/import');
+var csvExporter = require('../lib/managers/export');
 
 if (!!process.argv[2]) {
     // init mongo connection
     db.connect().
     then(function() {
-        logger.info('Importing csv');
-        return csvImporter.import(process.argv[2]);
+        logger.info('Exporting SPSS CSV');
+        return csvExporter.export(process.argv[2]);
     }).
     then(function() {
-        logger.info('Imported csv');
+        logger.info('Exported SPSS CSV');
         process.exit(0);
     }).
     fail(function(err) {
-        logger.error('Failed', err);
+        logger.error('Failed to export to CSV', err);
         process.exit(1);
     });
 } else {
-    logger.error('Failed: Missing import directory or file');
+    logger.error('Failed: Missing export filename');
     process.exit(1);
 }
