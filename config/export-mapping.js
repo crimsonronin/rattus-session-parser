@@ -4,7 +4,7 @@
 
 module.exports = {
     headings: [
-        'ID',
+        'id',
         'Date',
         'Group',
         'Animal ID',
@@ -20,7 +20,7 @@ module.exports = {
         'Number of tries'
     ],
     fields: {
-        'ID': 'trials._id',
+        'id': 'trials._id',
         'Date': 'schedule-run-date',
         'Group': 'group-id',
         'Animal ID': 'animal-id',
