@@ -15,6 +15,7 @@ module.exports = {
         'Distance',
         'Pattern',
         'Sample',
+        'Reward Latency',
         'Correct Latency',
         'Delay',
         'Number of tries'
