@@ -31,6 +31,7 @@ module.exports = {
         'Distance': 'trials.distance-gp',
         'Pattern': 'trials.pattern-number',
         'Sample': 'trials.sample-side',
+        'Reward Latency': 'trials.reward-collection-latency',
         'Correct Latency': 'trials.correct-image-response-latency',
         'Delay': 'trials.delay',
         'Number of tries': ''
